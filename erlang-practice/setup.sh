@@ -7,8 +7,14 @@ cd rebar
 sudo ./bootstrap
 sudo git clone https://github.com/gericass/dotfiles
 cd dotfiles
+sudo apt remove -y vim
+sudo add-apt-repository -y ppa:jonathonf/vim
+sudo apt update
+sudo apt install -y vim
 cp .vimrc ~
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
-sudo vim +NeoBundleInstall +q +q
-sudo vim +GoInstallBinaries +q +q
+sudo chmod -R 777 ~/.vim/bundle
+sudo apt-get install -y mercurial
+vim +NeoBundleInstall +q +q
+vim +GoInstallBinaries +q +q
