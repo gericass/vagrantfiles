@@ -1,6 +1,6 @@
-sudo add-apt-repository ppa:gophers/archive
+sudo add-apt-repository -y ppa:gophers/archive
 sudo apt-get update
-sudo apt-get install golang-1.9-go
+sudo apt-get install -y golang-1.9-go
 sudo git clone https://github.com/gericass/dotfiles
 cd dotfiles
 sudo apt remove -y vim
