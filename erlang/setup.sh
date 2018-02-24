@@ -14,7 +14,8 @@ sudo apt update
 sudo apt install -y vim
 cp .vimrc ~
 mkdir -p ~/.vim/bundle
-git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install.sh
+sh ./install.sh
 sudo chmod -R 777 ~/.vim/bundle
 sudo apt-get install -y mercurial
 vim +NeoBundleInstall +q +q
