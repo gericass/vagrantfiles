@@ -6,6 +6,7 @@ git clone https://github.com/erlang/rebar3.git
 cd rebar
 sudo ./bootstrap
 sudo git clone https://github.com/gericass/dotfiles
+echo "export PATH=$PATH:/home/vagrant/rebar3" >> ~/.bash_profile
 cd dotfiles
 sudo apt remove -y vim
 sudo add-apt-repository -y ppa:jonathonf/vim
